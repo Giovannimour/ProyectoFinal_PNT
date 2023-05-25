@@ -29,22 +29,276 @@ body{
 
 div.Header-Esteban{
     height: 100vh;
-    background-color: lightblue;
+    background-image: url(../img/esteban/punto.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+    /*-- Estilos a profundidad para el div header ESTEBAN--*/
+    div.Header-Esteban{
+        width: 100%;
+    }
+
+    div.Header-Esteban>header{
+        height: 100vh;
+        display: grid;
+        color: white;
+        text-shadow: 5px 5px 10px rgb(43, 167, 255);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+                            "leftimage titulo titulo"
+                            "leftimage parrafo parrafo"
+                            "leftimage nombres nombres"
+                            "leftimage naveg naveg";
+    }
+
+    div.Header-Esteban>header>article.titulo{
+        grid-area: titulo;
+        text-align: center;
+        align-self: end;
+        font-size: 450%;
+    }
+
+    div.Header-Esteban>header>article.leftImage{
+        grid-area: leftimage;
+    }
+    div.Header-Esteban>header>article.leftImage>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    div.Header-Esteban>header>article.parrafo{
+        grid-area: parrafo;
+        font-size: 240%;
+        align-self: center;
+        text-align: center;
+        margin: 0% 5%;
+    }
+
+    div.Header-Esteban>header>article.nombres{
+        grid-area: nombres;
+        font-size: 160%;
+        align-self: center;
+        text-align: center;
+    }
+
+    div.Header-Esteban>header>article.nav{
+        grid-area: naveg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 120%;
+    }
+
+    div .botonNav{
+        background-color: rgba(75, 60, 148, 0.1);
+        border-radius: 35px;
+        color: white;
+        font-size: 110%;
+        font-weight: 700;
+        padding: 3% 5%;
+        text-align: center;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    }
+
+    div .botonNav:hover{
+        box-shadow: white 0 0 0 3px, transparent 0 0 0 0;
+        background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    }
+
 
 /*-- Estilos para seccion 2 ESTEBAN--*/
 
 section.seccion2-Esteban{
     height: 100vh;
-    background-color: rgb(194, 234, 50);
+    background-image: url(../img/esteban/punto4.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+    /*-- Estilos a profundidad para section 2 ESTEBAN--*/
+    section.seccion2-Esteban{
+        height: 100vh;
+        display: grid;
+        color: white;
+        text-shadow: 5px 5px 10px rgb(175, 6, 213);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+                            "titulo titulo rigthimage"
+                            "texto texto rigthimage"
+                            "texto texto rigthimage"
+                            "texto texto rigthimage";
+    }
+
+    section.seccion2-Esteban>div.titulo{
+        grid-area: titulo;
+        text-align: center;
+        align-self: end;
+        font-size: 400%;
+    }
+
+    section.seccion2-Esteban>div.image{
+        grid-area: rigthimage;
+    }
+
+    section.seccion2-Esteban>div.image>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    section.seccion2-Esteban>div.texto{
+        grid-area: texto;
+        font-size: 250%;
+        align-self: center;
+        text-align: center;
+        margin: 0% 10%;
+    }
 
 /*-- Estilos para seccion 3 ESTEBAN--*/
 
 section.seccion3-Esteban{
     height: 100vh;
-    background-color: lightgreen;
+    background-image: url(../img/esteban/punto3.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+    /*-- Estilos a profundidad para section 3 ESTEBAN--*/
+    section.seccion3-Esteban{
+        height: 100vh;
+        display: grid;
+        color: white;
+        text-shadow: 5px 5px 10px rgb(115, 28, 238);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 5fr;
+        gap: 5% 3%;
+        grid-template-areas:
+                            "titulo titulo titulo"
+                            "part1 part2 part3";
+    }
+
+
+    section.seccion3-Esteban>div.titulo{
+        grid-area: titulo;
+        text-align: start;
+        align-self: center;
+        font-size: 300%;
+        margin-left: 5%;
+    }
+
+    section.seccion3-Esteban>article.parte1{
+        grid-area: part1;
+        display: grid;
+        grid-template-rows: 60% 10% 30%;
+        margin-left: 10%;
+    }
+        
+        section.seccion3-Esteban>article.parte1>div.imgcarro{
+            margin: 0% 5%;
+        }
+
+        section.seccion3-Esteban>article.parte1>div.imgcarro>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30px;
+        }
+
+        section.seccion3-Esteban>article.parte1>div.subtitulo1{
+            text-align: center;
+            font-size: 230%;
+            align-self: center;
+            margin-top: 4%;
+        }
+
+        section.seccion3-Esteban>article.parte1>div.texto1{
+            text-align: center;
+            font-size: 150%;
+            align-self: flex-start;
+            margin: 10% 10%;
+        }
+
+    section.seccion3-Esteban>article.parte2{
+        grid-area: part2;
+        display: grid;
+        grid-template-rows: 60% 10% 30%;
+    }
+
+        section.seccion3-Esteban>article.parte2>div.imgmedical{
+            margin: 0% 5%;
+        }
+
+        section.seccion3-Esteban>article.parte2>div.imgmedical>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30px;
+        }
+
+        section.seccion3-Esteban>article.parte2>div.subtitulo2{
+            text-align: center;
+            font-size: 230%;
+            align-self: center;
+            margin-top: 4%;
+        }
+
+        section.seccion3-Esteban>article.parte2>div.texto2{
+            text-align: center;
+            font-size: 150%;
+            align-self: flex-start;
+            margin: 10% 10%;
+        }
+
+    section.seccion3-Esteban>article.parte3{
+        grid-area: part3;
+        display: grid;
+        grid-template-rows: 60% 10% 30%;
+        margin-right: 10%;
+
+    }
+
+        section.seccion3-Esteban>article.parte3>div.imghome{
+            margin: 0% 5%;
+        }
+
+        section.seccion3-Esteban>article.parte3>div.imghome>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30px;
+        }
+
+        section.seccion3-Esteban>article.parte3>div.subtitulo3{
+            text-align: center;
+            font-size: 230%;
+            align-self: center;
+            margin-top: 4%;
+        }
+
+        section.seccion3-Esteban>article.parte3>div.texto3{
+            text-align: center;
+            font-size: 150%;
+            align-self: flex-start;
+            margin: 10% 10%;
+        }
+
+
+
+
 
 /*-- Estilos para seccion 4 SOFIA--*/
 
