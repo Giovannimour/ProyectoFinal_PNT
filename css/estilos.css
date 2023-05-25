@@ -157,10 +157,11 @@ section.seccion2-Esteban{
 
     section.seccion2-Esteban>div.texto{
         grid-area: texto;
-        font-size: 250%;
+        font-size: 220%;
         align-self: center;
         text-align: center;
         margin: 0% 10%;
+        border:  5% 0%;
     }
 
 /*-- Estilos para seccion 3 ESTEBAN--*/
