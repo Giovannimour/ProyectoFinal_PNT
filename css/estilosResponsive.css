@@ -28,12 +28,13 @@
 
         section.seccion4-Sofia{
             height: 200vh;
-            background-color: lightslategray;
+            flex-wrap: wrap;
         }
 
         /*-- Estilos responsive para seccion 5 SOFIA--*/
 
         section.seccion5-Sofia{
+            height: 200vh;
             flex-wrap: wrap;
         }
 
