@@ -71,6 +71,7 @@
         height: 0%;
     }
 
+
     /*-- Estilos responsive para seccion 3 ESTEBAN--*/
 
     section.seccion3-Esteban{
@@ -101,7 +102,6 @@
         grid-template-rows: 60% 10% 30%;
         margin: 0% 15%;
     }
-
     section.seccion3-Esteban>article.parte3{
         grid-area: part3;
         display: grid;
@@ -110,17 +110,17 @@
     }
     /*-- Estilos responsive para seccion 4 SOFIA--*/
 
-    section.seccion4-Sofia{
-        height: 200vh;
-        background-color: lightslategray;
-    }
+        section.seccion4-Sofia{
+          height: 200vh;
+          flex-wrap: wrap;
+      }
 
     /*-- Estilos responsive para seccion 5 SOFIA--*/
 
-    section.seccion5-Sofia{
-        height: 200vh;
-        background-color: rgb(135, 30, 30);
-    }
+      section.seccion5-Sofia{
+          height: 200vh;
+          flex-wrap: wrap;
+      }
 
     /*-- Estilos responsive para seccion 6 JUAN DANIEL--*/
 
