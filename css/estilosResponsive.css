@@ -124,12 +124,16 @@
 
     /*-- Estilos responsive para seccion 6 JUAN DANIEL--*/
 
+  
     section.seccion6-JuanDaniel{
         height: 200vh;
         background-color: rgb(69, 200, 102);
     }
 
     /*-- Estilos responsive para seccion 7 JUAN DANIEL--*/
+
+
+        /*-- Estilos responsive para el Footer --*/
 
     section.seccion7-JuanDaniel{
         height: 200vh;
@@ -138,10 +142,68 @@
 
     /*-- Estilos responsive para seccion 8 DANIEL PAREJA--*/
 
-    section.seccion8-DanielPareja{
-        height: 200vh;
-        background-color: rgb(228, 225, 69);
-    }
+        section.seccion8-DanielPareja{
+            height: 200vh;
+        
+        }
+        .timeline {
+            grid-template-columns: 1fr;
+            width: 80%;
+        }
+    
+        .timeline::before {
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 2px;
+        }
+    
+        .evento h2 {
+            order: 1;
+            margin-bottom: 20px;
+        }
+    
+        .evento:nth-child(2) h2 {
+            order: 1;
+            margin-bottom: 20px;
+        }
+    
+        .evento:nth-child(2) h3 {
+            order: 2;
+        }
+
+        @media (max-width: 600px) {
+            .timeline {
+                grid-template-columns: 1fr;
+                width: 90%;
+            }
+        
+            .timeline::before {
+                left: 50%;
+                top: 0;
+                height: 100%;
+                width: 2px;
+            }
+        
+            .evento h2 {
+                order: 1;
+                margin-bottom: 20px;
+            }
+        
+            .evento:nth-child(2) h2 {
+                order: 1;
+                margin-bottom: 20px;
+            }
+        
+            .evento:nth-child(2) h3 {
+                order: 2;
+            }
+        
+            .evento p {
+                width: 100%;
+            }
+        }
+    
 
     /*-- Estilos responsive para seccion 9 DANIEL PAREJA--*/
 
@@ -149,12 +211,43 @@
         height: 200vh;
         background-color: rgb(35, 188, 254);
     }
+  
+    .grid-container {
+            flex-direction: column;
+            align-items: center;
+    }
+      
+    .text1, .text2, .text3 {
+            width: 80vw;
+            height: auto;
+            margin: 10px 0;
+    }
+    @media (max-width: 600px) {
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .text1, .text2, .text3 {
+        width: 90vw;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .seccion9-DanielPareja h2 {
+        font-size: 1.5em;
+    }
+
+    .text1 h3, .text2 h3, .text3 h3 {
+        font-size: 1.2em;
+    }
+}
     /*-- Estilos responsive para el Footer --*/
 
     footer{
         height: 60vh;
         background-color: lime;
         }
-
     }
+
     
