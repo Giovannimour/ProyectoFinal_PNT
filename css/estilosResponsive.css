@@ -2,75 +2,252 @@
 @media (max-width: 920px){
     /* Estilos responsive Movile */
     
-    /*-- Estilos responsive para el div header --*/
-    
-/*-- Estilos responsive para el div header ESTEBAN--*/
-        div.Header-Esteban{
-            height: 80vh;
-            background-color: lightblue;
-        }
+    /*-- Estilos responsive para el div header ESTEBAN--*/
+    div.Header-Esteban{
+        height: 100vh;
+    }
+    div.Header-Esteban>header{
+        height: 100vh;
+        display: grid;
+        color: white;
+        text-shadow: 5px 5px 10px rgb(167, 43, 255);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+                            "titulo titulo"
+                            "parrafo"
+                            "nombres"
+                            "naveg";
+    }
 
-        /*-- Estilos responsive para seccion 2 ESTEBAN--*/
+    div.Header-Esteban>header>article.parrafo{
+        grid-area: parrafo;
+        font-size: 200%;
+        align-self: center;
+        text-align: center;
+        margin: 0% 5%;
+    }
 
-        section.seccion2-Esteban{
-            height: 200vh;
-            background-color: rgb(194, 234, 50);
-        }
+    div.Header-Esteban>header>article.nombres{
+        grid-area: nombres;
+        font-size: 110%;
+        align-self: center;
+        text-align: center;
+    }
 
-        /*-- Estilos responsive para seccion 3 ESTEBAN--*/
+    div.Header-Esteban>header>article.nav{
+        grid-area: naveg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 120%;
+}
 
-        section.seccion3-Esteban{
-            height: 200vh;
-            background-color: lightgreen;
-        }
+    /*-- Estilos responsive para seccion 2 ESTEBAN--*/
 
-        /*-- Estilos responsive para seccion 4 SOFIA--*/
+    section.seccion2-Esteban{
+        height: 100vh;
+        display: grid;
+        color: white;
+        text-shadow: 5px 5px 10px rgb(98, 14, 233);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+                            "titulo titulo"
+                            "texto texto"
+                            "texto texto"
+                            "texto texto";
+    }
+
+    section.seccion2-Esteban>div.titulo{
+        grid-area: titulo;
+        text-align: center;
+        align-self: center;
+        font-size: 400%;
+    }
+
+    section.seccion2-Esteban>div.image>img{
+        width: 0%;
+        height: 0%;
+    }
+
+
+    /*-- Estilos responsive para seccion 3 ESTEBAN--*/
+
+    section.seccion3-Esteban{
+        height: 300vh;
+        display: grid;
+        color: white;
+        text-shadow: 5px 5px 10px rgb(141, 20, 255);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 5fr 5fr;
+        gap: 1% 3%;
+        grid-template-areas:
+                            "titulo"
+                            "part1"
+                            "part2"
+                            "part3";
+    }
+
+    section.seccion3-Esteban>article.parte1{
+        grid-area: part1;
+        display: grid;
+        grid-template-rows: 60% 10% 30%;
+        margin: 0% 15%;
+    }
+
+    section.seccion3-Esteban>article.parte2{
+        grid-area: part2;
+        display: grid;
+        grid-template-rows: 60% 10% 30%;
+        margin: 0% 15%;
+    }
+    section.seccion3-Esteban>article.parte3{
+        grid-area: part3;
+        display: grid;
+        grid-template-rows: 60% 10% 30%;
+        margin: 0% 15%;
+    }
+    /*-- Estilos responsive para seccion 4 SOFIA--*/
 
         section.seccion4-Sofia{
-            height: 200vh;
-            flex-wrap: wrap;
-        }
+          height: 200vh;
+          flex-wrap: wrap;
+      }
 
-        /*-- Estilos responsive para seccion 5 SOFIA--*/
+    /*-- Estilos responsive para seccion 5 SOFIA--*/
 
-        section.seccion5-Sofia{
-            height: 200vh;
-            flex-wrap: wrap;
-        }
+      section.seccion5-Sofia{
+          height: 200vh;
+          flex-wrap: wrap;
+      }
 
-        /*-- Estilos responsive para seccion 6 JUAN DANIEL--*/
+    /*-- Estilos responsive para seccion 6 JUAN DANIEL--*/
 
-        section.seccion6-JuanDaniel{
-            height: 200vh;
-            background-color: rgb(69, 200, 102);
-        }
+  
+    section.seccion6-JuanDaniel{
+        height: 200vh;
+        background-color: rgb(69, 200, 102);
+    }
 
-        /*-- Estilos responsive para seccion 7 JUAN DANIEL--*/
+    /*-- Estilos responsive para seccion 7 JUAN DANIEL--*/
 
-        section.seccion7-JuanDaniel{
-            height: 200vh;
-            background-color: rgb(228, 69, 188);
-        }
 
-        /*-- Estilos responsive para seccion 8 DANIEL PAREJA--*/
+        /*-- Estilos responsive para el Footer --*/
+
+    section.seccion7-JuanDaniel{
+        height: 200vh;
+        background-color: rgb(228, 69, 188);
+    }
+
+    /*-- Estilos responsive para seccion 8 DANIEL PAREJA--*/
 
         section.seccion8-DanielPareja{
             height: 200vh;
-            background-color: rgb(228, 225, 69);
+        
+        }
+        .timeline {
+            grid-template-columns: 1fr;
+            width: 80%;
+        }
+    
+        .timeline::before {
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 2px;
+        }
+    
+        .evento h2 {
+            order: 1;
+            margin-bottom: 20px;
+        }
+    
+        .evento:nth-child(2) h2 {
+            order: 1;
+            margin-bottom: 20px;
+        }
+    
+        .evento:nth-child(2) h3 {
+            order: 2;
         }
 
-        /*-- Estilos responsive para seccion 9 DANIEL PAREJA--*/
-
-        section.seccion9-DanielPareja{
-            height: 200vh;
-            background-color: rgb(35, 188, 254);
+        @media (max-width: 600px) {
+            .timeline {
+                grid-template-columns: 1fr;
+                width: 90%;
+            }
+        
+            .timeline::before {
+                left: 50%;
+                top: 0;
+                height: 100%;
+                width: 2px;
+            }
+        
+            .evento h2 {
+                order: 1;
+                margin-bottom: 20px;
+            }
+        
+            .evento:nth-child(2) h2 {
+                order: 1;
+                margin-bottom: 20px;
+            }
+        
+            .evento:nth-child(2) h3 {
+                order: 2;
+            }
+        
+            .evento p {
+                width: 100%;
+            }
         }
-        /*-- Estilos responsive para el Footer --*/
+    
 
-        footer{
-            height: 60vh;
-            background-color: lime;
-        }
+    /*-- Estilos responsive para seccion 9 DANIEL PAREJA--*/
 
+    section.seccion9-DanielPareja{
+        height: 200vh;
+        background-color: rgb(35, 188, 254);
     }
+  
+    .grid-container {
+            flex-direction: column;
+            align-items: center;
+    }
+      
+    .text1, .text2, .text3 {
+            width: 80vw;
+            height: auto;
+            margin: 10px 0;
+    }
+    @media (max-width: 600px) {
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .text1, .text2, .text3 {
+        width: 90vw;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .seccion9-DanielPareja h2 {
+        font-size: 1.5em;
+    }
+
+    .text1 h3, .text2 h3, .text3 h3 {
+        font-size: 1.2em;
+    }
+}
+    /*-- Estilos responsive para el Footer --*/
+
+    footer{
+        height: 60vh;
+        background-color: lime;
+        }
+    }
+
     
