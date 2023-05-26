@@ -78,8 +78,67 @@ section.seccion7-JuanDaniel{
 
 section.seccion8-DanielPareja{
     height: 100vh;
-    background-color: rgb(228, 225, 69);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #9d50bb, #6e48aa, #fd1d1d, #ff6e7f);
+    background-size: 200% 200%;
+    color: white;
+    font-family: Arial, sans-serif;
 }
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    width: 60%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #dcd6f7; 
+    top: 50%;
+    left: 0;
+}
+
+.evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.evento h2 {
+    background-color: #dcd6f7; 
+    color: #6e48aa; 
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evento:nth-child(2) h2 {
+    order: 2;
+}
+
+.evento:nth-child(2) h3 {
+    order: 1;
+}
+
+.evento p {
+    width: 80%;
+}
+
 
 /*-- Estilos para seccion 9 DANIEL PAREJA--*/
 
